@@ -35,3 +35,13 @@ python market_context.py AAPL --output csv --output-file /ruta/salida.csv
 ```
 
 El informe resultante es únicamente descriptivo y explica riesgos/contexto. **No constituye recomendación.**
+
+## App web (Streamlit)
+
+Ejecuta la interfaz web:
+
+```bash
+streamlit run app.py
+```
+
+La app reutiliza las funciones internas del paquete `market_context` (sin subprocess), muestra métricas, score, alertas e interpretaciones, y mantiene el mismo enfoque descriptivo sin recomendaciones.
